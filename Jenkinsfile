@@ -4,9 +4,10 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'pwd'
+        sh '''pwd
         touch testfile.txt
         stat testfile.txt
+        '''
       }
     }
 
