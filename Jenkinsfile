@@ -5,6 +5,8 @@ pipeline {
     stage('build') {
       steps {
         sh 'pwd'
+        touch testfile.txt
+        stat testfile.txt
       }
     }
 
